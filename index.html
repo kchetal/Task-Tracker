@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+
+      <div class="wrapper">
+        <header>
+          <h1>Task Tracker</h1>
+          <p class="version-number">v2.0</p>
+        </header>
+          <section>
+            <h2>Create a Task</h2>
+            <form id="addTaskForm">
+              <label class="form-label">Task Name</label><br>
+              <input class="form-field" type="text" name="name" id="name" required/>
+              <br>
+              <label class="form-label">Date</label><br>
+              <input class="form-field" type="text" name="date" id="date" required/>
+              <br>
+              <label class="form-label">Assigned To</label><br>
+              <input class="form-field" type="text" name="assigned" id="assigned" required/>
+              <br>
+              <input type="submit" value="Submit">
+            </form>
+          </section>
+          <section>
+            <h2 class="existingTask">Existing Tasks</h2>
+            <div class="task-wrapper list-of-tasks">
+            </div>
+          </section>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+        <script src="js/taskTracker.js"></script>
+    </body>
+</html>
